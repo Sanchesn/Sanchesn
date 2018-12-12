@@ -3,7 +3,7 @@
     init();
 
 
-    if (!is_login() or !is_admin()) header('Location: /');
+    if (!is_login() or !is_admin()) header('Location:  /');
     
     if (isset($_POST['name'], $_POST['kol'], $_POST['summ'], $_POST['sklad'], $_FILES['photo'])) {
         if (create_product($_POST['name'], $_POST['kol'], $_POST['summ'], $_POST['sklad'], $_FILES['photo'])) {
